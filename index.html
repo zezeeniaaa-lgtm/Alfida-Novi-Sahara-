@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zento Sky</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eaf6ff;
+      margin: 0;
+      padding: 0;
+      color: #2d3e50;
+    }
+
+    header {
+      background: #4da6ff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      border-bottom: 3px solid #1f7dd4;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    header .btn-subscribe {
+      background: white;
+      color: #4da6ff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header .btn-subscribe:hover {
+      background: #d9efff;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #cce6ff, #eaf6ff);
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      color: #1a4f7a;
+    }
+
+    .hero h2 span {
+      color: #0073e6;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #2d3e50;
+    }
+
+    .hero input {
+      margin-top: 20px;
+      padding: 10px;
+      width: 250px;
+      border-radius: 20px;
+      border: 1px solid #4da6ff;
+      outline: none;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border: none;
+      margin-left: 10px;
+      border-radius: 20px;
+      background: #4da6ff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #1f7dd4;
+    }
+
+    /* Main Layout */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+      color: #0073e6;
+    }
+
+    .tag-cloud span {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 12px;
+      background: #cce6ff;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      color: #1a4f7a;
+    }
+
+    /* Blog Posts */
+    .posts {
+      display: grid;
+      gap: 20px;
+    }
+
+    .post {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post h4 {
+      margin: 0;
+      color: #0073e6;
+    }
+
+    .post p {
+      font-size: 0.95rem;
+      color: #333;
+      margin-top: 8px;
+    }
+
+    .post small {
+      display: block;
+      margin-top: 8px;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      background: #4da6ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Zento Sky</h1>
+    <button class="btn-subscribe">Subscribe</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Hey, I'm <span>Jonathan Doe</span> 👋</h2>
+    <p>A design technologist from Atlanta. I blog about technology, music, and travel.</p>
+    <input type="email" placeholder="Enter your email">
+    <button>Get Started</button>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>About Me</h3>
+      <p>Hello! My name is Jonathan Doe. I write tutorials, blogs, and personal thoughts. Stay tuned!</p>
+      <hr>
+      <h3>Tag Cloud</h3>
+      <div class="tag-cloud">
+        <span>Technology</span>
+        <span>Music</span>
+        <span>Travel</span>
+        <span>Inspiration</span>
+        <span>Lifestyle</span>
+      </div>
+    </aside>
+
+    <!-- Blog Posts -->
+    <div class="posts">
+      <div class="post">
+        <h4>The spectacle before us was indeed sublime</h4>
+        <p>Welcome, it’s great to have you here. We know that first impressions are important, so we’ve populated your new site...</p>
+        <small>September 26, 2019 · 1 min read</small>
+      </div>
+
+      <div class="post">
+        <h4>Far far away, behind the word mountains</h4>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+        <small>August 15, 2019 · 2 min read</small>
+      </div>
+
+      <div class="post">
+        <h4>The meaning of health has evolved over time</h4>
+        <p>In keeping with the biomedical perspective, early definitions of health focused on the theme of the body's ability to function...</p>
+        <small>July 26, 2019 · 1 min read</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zento Sky. All Rights Reserved.</p>
+  </footer>
+
+</body>
+  </html>
